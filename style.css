@@ -1,0 +1,175 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #69696a;
+  margin: 0 auto;
+  background-color: #f9fafc;
+}
+
+/* NOTE: header */
+
+header {
+  padding: 20px;
+}
+
+nav span {
+  display: block;
+  margin-top: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #69696a;
+}
+
+.blk_btn {
+  background-color: black;
+  padding: 10px 30px;
+  border-radius: 30px;
+  text-align: center;
+
+}
+
+.blk_btn a {
+  color: #f9fafc;
+}
+
+.logo, h1 {
+  color: black;
+}
+
+.logo {
+  padding-top: 10px;
+}
+
+/* NOTE: body */
+
+.container {
+  margin-top: 0px;
+  padding: 20px;
+}
+
+.left h1 {
+  font-weight: normal;
+}
+
+.left p {
+  border-left: 3px solid rgba(105,105,106,.35);
+  padding-left: 25px;
+  margin-top: 20px;
+  color: #69696a;
+}
+
+footer {
+  padding: 20px;
+}
+
+footer span{
+  display: block;
+}
+
+/* NOTE: @media */
+
+
+
+@media only screen and (min-width: 768px){
+
+  body {
+    max-width: 1000px;
+  }
+
+  header {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+  }
+
+  .logo {
+    flex-grow: 1;
+    color: black;
+    padding-top: 0;
+  }
+
+  nav span {
+    margin-right: 15px;
+    display: inline;
+    padding: 0;
+  }
+
+
+  .container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 100px;
+  }
+
+  .left {
+    width: 50%;
+    margin-right: 20px;
+  }
+
+  .left p {
+    border-left: 3px solid rgba(105,105,106,.35);
+    padding-left: 25px;
+    margin-top: 20px;
+    color: #69696a;
+  }
+
+  .left h1 {
+    color: black;
+    font-weight: normal;
+  }
+
+  .right{
+    width: 50%;
+    position: relative;
+    padding: 20px;
+    height: 150px;
+  }
+
+  .pink {
+    background-color: rgba(247,136,167,0.6);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    z-index: 5;
+    position: absolute;
+    right: 85px;
+  }
+
+  .orange {
+    background-color: rgba(247,193,162,0.7);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    z-index: 10;
+    position: absolute;
+    right: 0;
+    top: 120%;
+  }
+
+  .purple {
+    background-color: rgba(207,130,213,0.6);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: 37%;
+  }
+
+  footer span {
+    display: inline;
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 300px;
+  }
+}
